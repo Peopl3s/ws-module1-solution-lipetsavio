@@ -1,0 +1,1300 @@
+@font-face {
+    font-family: Roboto Bold; 
+    font-weight: 700;
+    font-style: normal;
+    src: url('../media/fonts/Roboto-Bold.ttf');    
+}
+
+@font-face {
+    font-family: Roboto MediumItalic; 
+    font-style:italic;
+    font-weight: 500;
+    src: url('../media/fonts/Roboto-MediumItalic.ttf');    
+}
+
+@font-face {
+    font-family: Roboto BoldItalic; 
+    font-weight: 700;
+    font-style:italic;
+    src: url('../media/fonts/Roboto-BoldItalic.ttf');    
+}
+
+@font-face {
+    font-family: Roboto LightItalic; 
+    font-weight: 300;
+    font-style:italic;
+    src: url('../media/fonts/Roboto-LightItalic.ttf');    
+}
+
+@font-face {
+    font-family: Roboto ThinItalic; 
+    font-weight: 100;
+    font-style:italic;
+    src: url('../media/fonts/Roboto-ThinItalic.ttf');    
+}
+
+@font-face {
+    font-family: Roboto Regular; 
+    font-weight: 400;
+    font-style:normal;
+    src: url('../media/fonts/Roboto-Regular.ttf');    
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited{
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+}
+
+button:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+    opacity: 0.7;
+}
+
+
+body, html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+    color: #626262;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    /*line-height: 1.5;*/
+    font-weight: 500;
+}
+
+.wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    /*background-color: #042750;*/
+    background-color: #0070f3;
+    max-height: 80px;
+}
+
+header .header__logo {
+    width: 150px;
+    height: 60px;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-list {
+    display: flex;
+}
+
+.nav-list__item {
+    margin-left: 30px;
+}
+
+.nav-list__link, .nav-list__link:visited {
+    color: #fff;
+    font-family: Roboto LightItalic;
+    font-size: 20px;
+}
+
+.nav-list__link:hover {
+    text-decoration: underline;
+}
+
+.search-tickets {
+    background-image: url(../media/img/96-963589_airbus-a320-wallpaper-airbus-a320-wallpaper-hd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;  
+    max-height: 970px;
+    width: 100%;
+}
+
+.search-tickets__header .search-tickets__title {
+    margin: 0px;
+    font-family: Roboto Bold;
+    font-size: 120px;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    letter-spacing: -6px;
+}
+
+.search-tickets__header .search-tickets__subtitle {
+    margin: 0px;
+    font-family: Roboto MediumItalic;
+    font-size: 40px;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.tickets {
+    height: 970px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.search-tickets__form {
+    text-align: left;
+}
+
+.search-tickets__form-desc{
+    margin-bottom: 0;
+    font-size: 20px;
+    font-family: Roboto BoldItalic;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.seacrh-tickets__form-fields{
+    display: flex;
+}
+
+
+.seacrh-tickets__form-fields input {
+    min-height: 50px;
+}
+
+.seacrh-tickets__btn {
+    margin-left: 6px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    background-color: #0070f3;
+    font-family: Roboto Bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.seacrh-tickets__form-fields input::placeholder {
+    font-family: Roboto ThinItalic;
+    color: #000;
+    font-size: 16px;
+  }
+
+
+  .principals {
+    background-image: url(../media/img/rules/cloud_010.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top bottom;  
+    background-color: #0070f3;;
+  }
+
+  .principals-info {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #000;
+  }
+
+
+  .principals-info #plane {
+    width: 270px;
+    height: 260px;
+    transform: rotate(-15.36deg);
+    transition: all 0.5s ease-out;
+}
+
+.principals-info #plane:hover {
+    transform: rotate(15.36deg);
+}
+
+.principals-info img {
+    max-width: 270px;
+    height: auto;
+    border-radius: 15%;
+}
+
+.outer-circle{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.mid-circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -60px 0px 0px -60px;
+    width: 120px;
+    height: 120px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.inner-circle {
+    padding-top: 10px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -45px 0px 0px -45px;
+    width: 90px;
+    height: 90px;
+    background-color: #c560e4;
+    border-radius: 50%;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    z-index: 1;
+    transition: all 0.5s ease-out;
+}
+
+.inner-circle p {
+    margin: 0;
+    font-size: 60px;
+    font-family: Roboto Bold;
+}
+
+.billet {
+    position: absolute;
+    left: 100px;
+    top: 20px;
+    width: 400px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 0 50px 50px 0;
+    z-index: 0;
+    transition: all 0.5s ease-out;
+}
+
+.billet:hover {
+    box-shadow: 0 20px 10px rgba(0,0,0,0.5);
+}
+
+.billet-inner {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0px;
+    top: 10px;
+    width: 383px;
+    height: 80px;
+    background-color: rgb(224, 224, 224);
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 0 50px 50px 0;
+    z-index: 0;
+    padding: 8%;
+}
+
+.first-princip, .second-princip, .third-princip {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-out;
+}
+
+.second-princip img:hover, .third-princip img:hover {
+    transform: rotate(-10deg);
+    box-shadow: 30px 0 20px rgba(0,0,0,0.5);
+}
+
+.billet-one  {
+    min-width: 550px;
+    margin: 25px;
+    transition: all 0.5s ease-out;
+}
+
+
+.inner-circle:hover {
+    background-color: rgba(16, 255, 16, 0.582);
+}
+
+.promo {
+    background-color: #b6d8ffba;;
+  }
+
+.promotions {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.promotions #heart {
+    font-size: 120px;
+    color: red;
+    transition: all 0.5s ease-out;
+}
+
+.promotions #heart:hover {
+    transform: scale(2);
+    color: rgb(255, 0, 128);
+}
+
+
+.promo__cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo__card {
+    background-color: rgb(255, 255, 255);
+    max-width: 300px;
+    min-height: 513px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    margin: 25px;
+    border: 1px solid #000;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.5s ease-out;
+}
+
+.promo__card:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 0 20px rgba(0,0,0,0.5);
+}
+
+.promo__card img {
+    border-radius: 15px 15px 0 0;
+    width: 300px;
+    height: 215px;
+    border: 1px solid #000;
+}
+
+.promo__card .promo-title {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Roboto Bold;
+    font-size: 25px;
+    color: #000;
+}
+
+.promo__card .promo-text {
+    margin: 0;
+    padding: 15px;
+    font-family: Roboto MediumItalic;
+    font-size: 14px;
+}
+
+.promo__card .promo-btn {
+    width: 280px;
+    height: 45px;
+    margin-bottom: 10px;
+    background: #0070f3;
+    border-radius: 16px;
+    color: #fff;
+    font-family: Roboto MediumItalic;
+    font-size: 18px;
+}
+
+.trust {
+    margin: 0;
+    color:#000;
+    background-color: #0070f3;;;
+    /*min-height: 600px;*/
+}
+
+/*.trust .background-cloud {
+    transform: scale(1.5);
+    max-width: 1100px;
+    height: 600px;
+    position: absolute;
+    top: -170px;
+    left: 200px;
+    z-index: -1;
+}*/
+
+.trust-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trust-cards {
+    display: flex;
+    justify-content: space-around;
+}
+
+.trust-card {
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 25px;
+    transition: all 0.5s ease-out;
+}
+
+
+.trust-card:hover {
+    box-shadow: 30px 0 20px rgba(0,0,0,0.5);
+}
+
+.trust-card p, h3 {
+    margin: 5px 5px 0 0;
+    color: #000;
+}
+
+.trust-cards img {
+    border-radius: 0 15px 15px 0;
+    width: 300px;
+    min-height: 215px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.subscribe {
+    background-image: url(../media/img/subscribe/road-trip\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left center;  
+    background-color: #0075fdba;
+    max-height: 700px;
+    transition: all 0.4s ease-out;
+}
+
+.subscribe:hover{
+    transform: scale(1.05);
+    margin-bottom: 10px;
+}
+
+
+.subscribe-info {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 500px;
+}
+
+
+.subscribe-info h2 {
+    color: #fff;
+    font-size: 70px;
+    font-family: Roboto Bold;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 15px;
+}
+
+.subscribe__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subscribe__form {
+    display: flex;
+}
+
+.subscribe__form input, .subscribe__form button {
+    min-height: 50px;
+    min-width: 280px;
+}
+
+.subscribe__content .subscribe-btn {
+    background: #0070f3;
+    border: 3px solid #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    text-align: center;
+    color: #000000;
+}
+
+.subscribe__form input::placeholder {
+    font-family: Roboto ThinItalic;
+    color: #000;
+    font-size: 20px;
+  }
+
+  footer {
+      padding: 10px;
+      background-color: #0251ad;
+      text-align: center;
+      color: #fff
+  }
+
+  footer p {
+    margin: 0;
+    font-family: Roboto Bold;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .footer-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+
+  
+  .footer-links a {
+    margin: 5px;
+    font-family: Roboto Bold;
+    font-size: 20px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+}
+
+#blur-login-background{
+    position: absolute;
+    left: -10px; right: -10px;
+    top: -10px; bottom: -10px;
+    z-index: -1;
+    filter: blur(5px);
+    background-image: url(../media/img/login/airbus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom; 
+}
+
+.login-info {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 300px;
+}
+
+.login__form label {
+    font-family: Roboto MediumItalic;
+    font-size: 18px;
+    color: #000;
+}
+
+.login__form input, .login__form button {
+    flex: 0 0 50px;
+    max-width: 300px;
+}
+
+.login__main {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 7px;
+    margin-right: 20px;
+    background-color: rgb(214, 214, 214);
+    margin-bottom: 10px;
+}
+
+
+.login__img {
+    max-width: 420px;
+    height: auto;
+    transition: all 0.4s ease-out;
+}       
+
+.login__img:hover {
+    opacity: 0.7;
+}       
+
+.login__btn {
+    border-radius: 10px;
+    border: 3px solid #fff;
+    background-color: #0070f3;
+    font-family: Roboto Bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.registration {
+    position: relative;
+    width: 100%;
+    min-height: 100vh; 
+}
+
+#blur-registration-background{
+    position: absolute;
+    left: -10px; right: -10px;
+    top: -10px; bottom: -10px;
+    z-index: -1;
+    filter: blur(5px);
+    background-image: url(../media/img/registration/plan-road-trip-tips-ideas.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom; 
+}
+
+.registration-info {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.registration__main-content {
+    margin: 25px;
+    font-family: Roboto MediumItalic;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid grey;
+    color: #000;
+    background-color: #c7d6f3;
+}
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.registration__form input {
+    min-height: 40px;
+    min-width: 200px;
+    margin-left: 20px;
+}
+
+
+.registration__title {
+    font-family: Roboto Bold;
+    font-size: 35px;
+    color: #fff;
+    min-height: 70px;
+    margin-top: 0;
+    background-color: #0070f3;;
+    border: 1px solid black;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.registration__btn {
+    min-height: 40px;
+    min-width: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 3px solid #fff;
+    background-color: #0070f3;
+    font-family: Roboto Bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.reg-link a{
+    font-family: Roboto Bold;
+    font-size: 20px;
+    color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.search-result {
+    background-color: #0070f3;
+}
+
+.search-result h2 {
+    color: #fff;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.search-result-info {
+    min-height: 100vh;
+    padding: 0 30px 30px 30px;
+
+}
+
+.search-result__flight-card {
+    font-family: Roboto MediumItalic;
+    font-size: 20px;
+    color: #000;
+    max-width: 950px;
+    min-width: 400px;
+    margin-top: 25px;
+    display: flex;
+    border: 1px solid #0478ff;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+.search-result__flight-card p {
+    margin: 5px;
+}
+
+.flight-data-time-info > div,
+.flight-details > p {
+    margin-right: 12px;
+    margin-left: 12px;
+}
+/*
+.search-result__flight-card > div,
+.flight-card-info > div,
+.flight-data-time-info > div{
+    margin-right: 25px;
+}*/
+
+.flight-card-info {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid #0478ff;
+}
+
+.flight-card-desc {
+    display: flex;
+    flex-direction: column;
+    padding: 3px;
+    border-radius: 10px;
+    border-right: 2px solid #0478ff;
+    border-bottom: 2px solid #0478ff;
+}
+
+.flight-data-time-info {
+    display: flex;
+}
+
+.flight-details {
+    display: flex;
+    border-bottom: 1px solid grey;
+}
+
+.flight-card-booking {
+    background-color: rgb(128, 198, 255);
+    margin: 0;
+    flex-direction: column;
+    display: flex;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #0478ff;
+    justify-content: center;
+    align-items: center;
+}
+
+.flight-card-probability {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    padding: 3px;
+    border-radius: 10px;
+    border-right: 2px solid #0478ff;
+    border-left: 2px solid #0478ff;
+    border-top: 2px solid #0478ff;
+}
+
+.flight-card-btn {
+    margin-left: 6px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #09bd3f;
+    font-family: Roboto Bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.flight-card__symbol {
+    align-self: center;
+}
+
+.back-forth-flight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.single-flight {
+    display: flex;
+}
+
+.probability-diagram {
+    justify-content: center;
+    display: flex;
+}
+
+.probability-diagram svg {
+    width: 50%;
+    height: 50%;
+}
+
+.seat {
+background-image: url(../media/img/seat/CRJ-200-interior.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom; 
+}
+
+.seat-info {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seat__aircraft-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat__layout {
+    padding: 30px;
+    background-color: #fff;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border: 10px solid rgb(68 152 255);
+}
+
+.seat__layout .row {
+    margin: 10px;
+    display: flex;
+}
+
+.row .composition {
+    display: flex;
+    margin-right: 20px;
+}
+
+.seat-item {
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    margin: 3px;
+}
+
+.seat-item:hover {
+    transform: scale(1.25);
+    border:1px solid rgb(255, 94, 0);
+}
+
+.salled{
+    background-color: rgb(100, 100, 100);
+    border: 1px solid #fff;
+}
+
+.reserved {
+    background-color: rgb(248, 149, 0);
+    border: 1px solid #fff;
+}
+
+.seat__legend {
+    margin-top: 25px;
+    display: flex;
+    border-top: 1px solid #000;
+    flex-direction: column;
+}
+
+.seat__legend-mark {
+    display: flex;
+}
+
+.seat__title {
+    margin-bottom: 0;
+    font-family: Roboto Bold;
+    color: #fff;
+    font-size: 45px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.seat__subtitle {
+    margin-bottom: 0;
+    font-family: Roboto MediumItalic;
+    color: #fff;
+    font-size: 35px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.booking {
+    background-color: #eff1f4;
+}
+
+.booking-info {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto Regular;
+    
+}
+
+.booking-info__form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin-bottom: 20px;
+}
+
+.booking-info__form fieldset {
+    width: 100%;
+}
+
+.booking-info__flight {
+    display: flex;
+    align-items: baseline;
+
+    background-color: #fbfbfb;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.booking-info__passenger {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    background-color: #fbfbfb;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+.booking-info__flight > * {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    margin-right: 35px;
+}
+
+.booking-info__form fieldset {
+    display: flex;
+    flex-direction: column;
+}
+
+.passenger-add {
+    align-self: flex-end;
+}
+
+.booking-info__form input, .booking-info__form button {
+    min-height: 35px;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.booking-info__controls {
+    display: flex;
+}
+
+
+.booking-info__btn {
+    margin-left: 6px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #0070f3;
+    font-family: Roboto Bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.booking-managment-info {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-managment__flight-details {
+    display: flex;
+    /*width:80%;*/
+}
+
+.booking-managment__btn {
+    margin-left: 6px;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    background-color: #0070f3;
+    font-family: Roboto Bold;
+    font-size: 18px;
+    color: #fff;
+}
+
+.booking-managment__flight-from-to {
+    display: flex;
+    justify-content: space-between;
+}
+
+.booking-managment__flight-from-to p{
+    margin-right: 12px;
+    margin-left: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.booking-managment-passanger {
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0478ff;
+}
+
+.booking-managment-info h3 {
+    margin: 30px 0;
+}
+
+.booking-managment-passanger__head::before {
+    content: "☕";
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 71rem;
+}
+
+.profile__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.personal-data__header {
+    padding: .75rem;
+    background-color: #f1f2f8;
+    font-family: Roboto Bold;
+    color: #000;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.25rem;
+}
+
+.profile__personal-data {
+    max-width: 37rem;
+    width: 70%;
+    margin: 15px;
+}
+
+.personal-data__field {
+    font-family: Robot LightItalic;
+    font-size: .75rem;
+    line-height: 1rem;
+    color: #b2b2bf;
+}
+
+.personal-data__value {
+    font-family: Robot Regular;
+    font-size: 1.5rem;
+    line-height: 1.9375rem;
+    color: #000;
+    margin: 0;
+}
+
+.personal-data__content {
+    padding: .375rem .75rem .75rem;
+}
+
+.profile__booking-item {
+    padding: .375rem .75rem .75rem;
+    border-bottom: 1px solid grey;
+}
+
+.booking-code {
+    padding: .75rem;
+    background-color: #cecfd0;;
+    font-family: Roboto Bold;
+    color: #000;
+    font-size: 1rem;
+    text-align: left;
+    line-height: 1.25rem;
+}
+
+.profile__logout-btn {
+    margin-left: 10px;
+    margin-left: 6px;
+    border-radius: 10px;
+    border: 2px solid #0070f3;
+    color: #0070f3;
+    background-color: #fff;
+    font-family: Roboto Bold;
+    font-size: 18px;
+
+
+}
+
+  @media screen and (max-width: 730px) {
+    .header-info {
+        flex-direction: column;
+    }
+
+    header {
+        min-height: 210px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+    }
+
+    .seacrh-tickets__form-fields {
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    .search-tickets__header .search-tickets__title {
+        font-size: 60px;
+        -webkit-text-stroke-width: 4px;
+    }
+    .search-tickets__header .search-tickets__subtitle {
+        font-size: 20px;
+        -webkit-text-stroke-width: 1px;
+    }
+
+   .tickets {
+       height: auto;
+       padding-bottom: 20px;
+   }
+
+   .search-tickets__form {
+       text-align: center;
+   }
+
+   .first-princip, .second-princip, .third-princip {
+       flex-direction: column;
+   }
+
+   .promo__cards {
+       flex-direction: column;
+   }
+
+   .trust-cards {
+       flex-direction: column;
+    }
+
+    .subscribe__form {
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .subscribe__content h2 {
+        margin-top: 25px;
+        font-size: 55px;
+        -webkit-text-stroke-width: 3px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .first-princip, .second-princip, .third-princip {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .login-info  {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .search-result__flight-card {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    .flight-card__symbol {
+        display: none;
+    }
+
+    .booking-info__flight {
+        flex-direction: column;
+    }
+
+    .booking-info__flight > * {
+        margin-right: 0;
+    }
+
+    .booking-info__controls {
+        flex-direction: column;
+    }
+
+    .passenger-add {
+        align-self: center;
+    }
+
+    .single-flight {
+        flex-direction: column;
+    }
+
+    .flight-card-probability {
+        border-bottom: 2px solid #0070f3;
+        border-radius: 5px;
+    }
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="description" content="Сайт компании ЛипецкАВИО">
+    <meta name="Keywords" content="авиабилеты, авиаперелёт, липецк, билеты">
+    <title>ЛипецкАвио: дешёвые авиабилеты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container header-info">
+                <a href="index.html">
+                    <img src="media/img/real_png_logo.png" alt="ЛипецкАвио Логотип" class="header__logo test-0-logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a href="index.html#promo"
+                                class="nav-list__link test-0-nav-1">Акции</a></li>
+                        <li class="nav-list__item"><a href="index.html#search"
+                                class="nav-list__link test-0-nav-2">Поиск</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link test-0-nav-3">Регистрация на
+                                рейс</a></li>
+                        <li class="nav-list__item"><a href="login.html" class="nav-list__link test-0-nav-4">Личный
+                                кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="booking">
+                <div class="container booking-info">
+                    <h2>Бронирование</h2>
+                    <form action="" class="booking-info__form">
+                        <fieldset id="flights-set">
+                            <legend>Данные о рейсах</legend>
+                            <div class="booking-info__flight">
+                                <div>
+                                    <label for="flight-num">Номер рейса</label>
+                                    <input class="test-5-fc" type="text" id="flight-num">
+
+                                    <label for="from-city">Город вылета</label>
+                                    <input class="test-5-fcity" type="text" id="from-city">
+
+                                    <label for="airport-from">Аэропорт вылета</label>
+                                    <input class="test-5-from" type="text" id="airport-from">
+
+                                    <label for="date-from">Дата вылета</label>
+                                    <input class="test-5-dd" type="date" id="date-from">
+
+                                    <label for="time-from">Время вылета</label>
+                                    <input class="test-5-dt" type="time" id="time-from">
+                                </div>
+                                <div>
+                                    <label for="city-to">Город назначения</label>
+                                    <input class="test-5-tcity" type="text" id="city-to">
+
+                                    <label for="airport-to">Аэропорт назначения</label>
+                                    <input class="test-5-to" type="text" id="airport-to">
+
+                                    <label for="time-to">Время прилёта</label>
+                                    <input class="test-5-at " type="text" id="time-to">
+
+                                    <label for="flight-price">Стоимость</label>
+                                    <input class="test-5-fp" type="text" id="flight-price">
+                                </div>
+                            </div>
+                        </fieldset>
+                        <fieldset id="passengers-set">
+                            <legend>Данные о пассажирах</legend>
+                            <div class="booking-info__passenger">
+                                <label for="passenger-name">Имя</label>
+                                <input class="test-5-name" type="text" id="passenger-name">
+
+                                <label for="passenger-surname">Фамилия</label>
+                                <input class="test-5-last" type="text" id="passenger-surname">
+
+                                <label for="passenger-birthdate">Дата рождения</label>
+                                <input class="test-5-dob" type="text" id="passenger-birthdate">
+
+                                <label for="passenger-num-doc">Номер документа</label>
+                                <input class="test-5-doc" type="text" id="passenger-num-doc">
+
+                                <button class="booking-info__btn passenger-remove test-5-remove">Удалить</button>
+                            </div>
+                            <button class="booking-info__btn passenger-add test-5-add">Добавить</button>
+                        </fieldset>
+                        <fieldset>
+                            <div class="booking-info__controls">
+                                <label for="total-price">Финальная стоимость</label>
+                                <input class="test-5-price" type="text" id="total-price" value="68 765 р.">
+                                <button class="booking-info__btn get-booking test-5-book">Оформить бронирование</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p class="test-0-phone">Телефон “8 (800) 100-10-10”</p>
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="/login">Login</a>
+                    <a href="/singup">Sign up</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/news">News</a>
+                    <a href="/return">Return</a>
+                    <a href="/feedback">Feedback</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <meta name="description" content="Сайт компании ЛипецкАВИО">
+    <meta name="Keywords" content="авиабилеты, авиаперелёт, липецк, билеты">
+    <title>ЛипецкАвио: дешёвые авиабилеты</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="container header-info">
+                <a href="index.html">
+                    <img src="media/img/real_png_logo.png" alt="ЛипецкАвио Логотип" class="header__logo test-0-logo">
+                </a>
+                <nav class="header__nav">
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a href="index.html#promo"
+                                class="nav-list__link test-0-nav-1">Акции</a></li>
+                        <li class="nav-list__item"><a href="index.html#search"
+                                class="nav-list__link test-0-nav-2">Поиск</a></li>
+                        <li class="nav-list__item"><a href="#" class="nav-list__link test-0-nav-3">Регистрация на
+                                рейс</a></li>
+                        <li class="nav-list__item"><a href="login.html" class="nav-list__link test-0-nav-4">Личный
+                                кабинет</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <section class="search-result">
+                <div class="container search-result-info">
+                    <div class="search-tickets__form">
+                        <form action="" class="seacrh-tickets__form-fields">
+                            <input class="test-0-fd" type="text" placeholder="Откуда">
+                            <input class="test-0-fa" type="text" placeholder="Куда">
+                            <input class="test-0-fdt" type="datetime" placeholder="Туда">
+                            <input class="test-0-fat " type="datetime" placeholder="Обратно">
+                            <input class="test-0-fnp " type="number" min="1" placeholder="Кол-во пассажиров">
+                            <button class="seacrh-tickets__btn test-0-fbs ">Найти билеты</button>
+                        </form>
+                    </div>
+                    <h2>Результат поиска</h2>
+                    <div class="search-result__flight-card">
+                        <div class="flight-card-info">
+                            <div class="back-forth-flight">
+                                <div class="single-flight">
+                                    <div class="flight-card-desc">
+                                        <div class="flight-details">
+                                            <p class="num-flight">Рейс № 111</p>
+                                            <p class="ship">Аэрофлот ⛱</p>
+                                            <p>(Туда)</p>
+                                        </div>
+                                        <div class="flight-data-time-info">
+                                            <div>
+                                                <p class="departure-date">13 май 2021, чт</p>
+                                                <p class="departure-time">11:05</p>
+                                            </div>
+                                            <div>
+                                                <p class="travel-time">В пути: 19ч 15м</p>
+                                                <i>⌚</i>
+                                            </div>
+                                            <div>
+                                                <p>Прибытие:</p>
+                                                <p class="arrival-time">20:20</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flight-card-probability">
+                                        <p>Вероятность вылета: 50%</p>
+                                        <div class="probability-diagram">
+                                            <svg viewBox="0 0 42 42" class="donut">
+                                                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
+                                                    fill="#fff"></circle>
+                                                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"
+                                                    fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+                                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
+                                                    fill="transparent" stroke="#ce4b99" stroke-width="3"
+                                                    stroke-dasharray="50 50" stroke-dashoffset="0"></circle>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-flight">
+                                    <div class="flight-card-desc">
+                                        <div class="flight-details">
+                                            <p class="num-flight test-4-fn">Рейс № 128</p>
+                                            <p class="ship test-4-at">Аэрофлот ⛱</p>
+                                            <p>(Обратно)</p>
+                                        </div>
+                                        <div class="flight-data-time-info">
+                                            <div>
+                                                <p class="departure-date test-4-dd">16 май 2021, чт</p>
+                                                <p class="departure-time test-4-dt">12:05</p>
+                                            </div>
+                                            <div>
+                                                <p class="travel-time test-4-ft">В пути: 9ч 15м</p>
+                                                <i>⌚</i>
+                                            </div>
+                                            <div>
+                                                <p>Прибытие:</p>
+                                                <p class="arrival-time test-4-at">21:10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="flight-card-probability">
+                                        <p>Вероятность вылета: 75%</p>
+                                        <div class="probability-diagram test-4-fh">
+                                            <svg viewBox="0 0 42 42" class="donut">
+                                                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954"
+                                                    fill="#fff"></circle>
+                                                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954"
+                                                    fill="transparent" stroke="#d2d3d4" stroke-width="3"></circle>
+                                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954"
+                                                    fill="transparent" stroke="#ce4b99" stroke-width="3"
+                                                    stroke-dasharray="75 25" stroke-dashoffset="0"></circle>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <i class="flight-card__symbol">💸</i>
+                        <div class="flight-card-booking">
+                            <p class="flight-card-price test-4-fp">32 768 р.</p>
+                            <button class="flight-card-btn test-4-bsb">Перейти к бранированию</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container">
+                <p class="test-0-phone">Телефон “8 (800) 100-10-10”</p>
+                <div class="footer-links">
+                    <a href="/">Home</a>
+                    <a href="/login">Login</a>
+                    <a href="/singup">Sign up</a>
+                    <a href="/contact">Contact</a>
+                    <a href="/news">News</a>
+                    <a href="/return">Return</a>
+                    <a href="/feedback">Feedback</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
